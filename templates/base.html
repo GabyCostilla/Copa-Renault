@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flask App</title>
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('home') }}">Home</a> |
+    <a href="{{ url_for('fixture') }}">Fixture</a> |
+    <a href="{{ url_for('inscripcion') }}">Inscripción</a> |
+    <a href="{{ url_for('cantina') }}">Cantina</a> |
+    <a href="{{ url_for('add_product') }}">Añadir Producto</a> |
+    <a href="{{ url_for('contacto') }}">Contacto</a>
+  </nav>
+  <div>
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>

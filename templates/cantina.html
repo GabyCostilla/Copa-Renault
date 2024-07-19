@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Cantina</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.product_id.label }} {{ form.product_id(size=32) }}<br>
+    {{ form.quantity.label }} {{ form.quantity(size=32) }}<br>
+    {{ form.submit() }}
+</form>
+<ul>
+    {% for product in products %}
+        <li>{{ product.name }} - {{ product.price }} - <img src="{{ product.image_url }}" alt="{{ product.name }}" width="100"></li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Agregar Producto</h1>
+<form method="POST">
+    <div>
+        <label for="name">Nombre del Producto</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="image_url">URL de la Imagen</label>
+        <input type="text" id="image_url" name="image_url" required>
+    </div>
+    <div>
+        <label for="price">Precio</label>
+        <input type="text" id="price" name="price" required>
+    </div>
+    <div>
+        <button type="submit">Agregar Producto</button>
+    </div>
+</form>
+{% endblock %}

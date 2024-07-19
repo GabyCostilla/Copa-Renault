@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Inscripción</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name(size=32) }}<br>
+    {{ form.captain.label }} {{ form.captain(size=32) }}<br>
+    {{ form.submit() }}
+</form>
+{% endblock %}
