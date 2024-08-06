@@ -23,5 +23,5 @@
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/copa-renault.git
+   git clone -b master https://github.com/tu-usuario/copa-renault.git
    cd copa-renault
