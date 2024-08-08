@@ -4,4 +4,4 @@ from app import db
 
 db.create_all()
 
-print("Tablas creadas correctamente")
+print("Tablas creadas correctamente, jsjs Commit random")
