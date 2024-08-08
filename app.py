@@ -15,9 +15,9 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
+# Mueve la importación de modelos después de la inicialización de la base de datos
+import models   
 
-# Importa las clases después de inicializar db
-from models import Team, Product, ContactMessage, User
 
 @login_manager.user_loader
 def load_user(user_id):
